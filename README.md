@@ -17,7 +17,7 @@ Cargar los inventarios de los distribuidores sin intervención humana.
 ![Problem Statement del proyecto.](images/problem-statement.jpg)
 
 ## Requerimientos
-1- Carga de Inventario. \n
+1- Carga de Inventario.
 1- Busqueda de Prudocutos.
 1- Revisión de ofertas de Taller.
 1- Administración de Usuario.
