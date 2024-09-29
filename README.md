@@ -18,27 +18,27 @@ Cargar los inventarios de los distribuidores sin intervención humana.
 
 ## Requerimientos
 1- Carga de Inventario.
-1- Busqueda de Prudocutos.
+1- Búsqueda de Productos.
 1- Revisión de ofertas de Taller.
 1- Administración de Usuario.
 2- Administración de Membresía.
-1- Monitoreo Transacciones.
+1- Monitoreo de Transacciones.
 1- Decidir si registrarse como comprador (taller) o distribuidor.
 1- Validación de requisitos legales.
 1- Gestión de compras (historial).
-1- Información del clliente y metodo de pago.
+1- Información del cliente y método de pago.
 1- Acceso a catálogos.
 
 2- Carga Automatizada Personalizada.
 2- Envíos.
 2- Notificaciones.
-2- AI estadísticas y sugerencias para competir en el mercado (Revisión de Odertas de Distribuidora).
+2- AI estadísticas y sugerencias para competir en el mercado. (Revisión de Ofertas de Distribuidora)
 2- Filtro por productos, precios, ubicación, categorías.
-2- Sistema de puntuacioines y referencias.
+2- Sistema de puntuaciones y referencias.
 2- Configuración de Fees.
 2- Manejo de Membresía.
 
-3- Configuracion Tipos de Pago.
+3- Configuración Tipos de Pago.
 3- AI de validación de requisitos legales.
 
 ## Diagrama Arquitectura
