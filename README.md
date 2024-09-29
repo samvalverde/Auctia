@@ -8,19 +8,11 @@ E-commerce of automotive spare parts.
 ## Problem Statement
 Cargar los inventarios de los distribuidores sin intervención humana.
 
-![Problem Statement del proyecto.]("C:\Users\jcval\OneDrive - Estudiantes ITCR\IIS2024\Diseno\Auctia\problem-statement.jpg")
-
-Por ejemplo:
-> "En el contexto de [contexto general del problema], hemos identificado que [descripción específica del problema]. Este proyecto busca resolver este problema mediante [tu solución propuesta]."
+![Problem Statement del proyecto.](images/problem-statement.jpg)
 
 ## Storyboard
 ### Crazy 8's
-Explica brevemente qué es la técnica de Crazy 8's y cómo la utilizaste para generar ideas en tu proyecto. Luego, incluye las imágenes de los storyboards creados.
+La técnica de Crazy 8's es un ejercicio de ideación rápido y eficaz utilizado en el diseño y desarrollo de productos para generar una diversidad de ideas en un corto período de tiempo.
+Las ideas más prometedoras fueron seleccionadas mediante un consenso. Se priorizaron aquellas que directamente abordaban las necesidades identificadas en el problem statement y que eran técnicamente viables dentro de los límites del proyecto.
 
-Puedes insertar imágenes usando Markdown así:
-![Descripción de la imagen](problem-statement.jpg)
-
-Para cada imagen, proporciona una breve descripción o título que explique qué aspecto del problema o qué solución está ilustrando cada storyboard.
-
-### Análisis de las Ideas
-Discute cómo seleccionaste o refinaste las ideas generadas a través de los Crazy 8's. ¿Cuáles ideas fueron llevadas adelante y por qué?
+![Storyboard de Problem Statement.](images/storyboard.pdf)
