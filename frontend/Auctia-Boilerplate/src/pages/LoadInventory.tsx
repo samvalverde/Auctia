@@ -1,7 +1,7 @@
 import React from 'react';
-import FileUpload from '../components/FileUpload';
-import InventoryTable from '../components/InventoryTable';
-import UploadButton from '../components/UploadButton';
+import FileUpload from '../components/general/FileUpload';
+import InventoryTable from '../components/general/InventoryTable';
+import UploadButton from '../components/general/UploadButton';
 
 const LoadInventory: React.FC = () => {
   const handleFileUpload = (file: File | null) => {  // Define que el archivo es de tipo File o puede ser null

@@ -1,8 +1,10 @@
+import Header from "./components/layouts/Header";
 import Router from "./router/Router";
 
 const App = () => {
   return (
-    <div className="bg-gray-400 mx-auto">
+    <div>
+      <Header />
       <Router />
     </div>
   );

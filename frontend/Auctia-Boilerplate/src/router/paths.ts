@@ -1,13 +1,13 @@
 const PATHS = {
-    HOME: '/',
-    LOGIN: '/login',
-    SIGNUP: '/signup',
-    DASHBOARD: '/dashboard',
-    PROFILE: '/profile',
-    ITEM: '/item/:id',
+    home: '/home',
+    login: '/login',
+    signup: '/signup',
+    dashboard: '/dashboard',
+    profile: '/profile',
+    item: '/item/:id',
     dist : {
-        load_inventory : '/dist/loadinventory',
-        search_product : '/dist/searchproduct'
+        load_inventory : '/dist/load',
+        search_product : '/dist/search'
     }
 };
 
