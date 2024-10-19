@@ -1,7 +1,9 @@
-import React from 'react';
-import { RiUser3Line } from 'react-icons/ri';
+import { RiShoppingCart2Line, RiUser3Line, RiMenuLine } from 'react-icons/ri';
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 import PATHS from '../../router/paths';
+import logo1 from '../../assets/icons/logo1.jpg';
+import logo2 from '../../assets/icons/logo2.jpg';
 
 const HeaderMenu = [
   { id: 1, path: PATHS.home, title: 'Home' },
@@ -10,20 +12,33 @@ const HeaderMenu = [
 ];
 
 const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false); // Para controlar el estado del menú colapsable
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
-    <header className="bg-gray-800 text-white shadow-md">
-      <div className="container mx-auto px-6 py-6 flex justify-between items-center">
+    <header className="bg-black text-white shadow-md">
+      <div className="container mx-auto px-6 py-4 flex justify-between items-center">
         {/* Logo y Título */}
         <div className="flex items-center">
-          <img
-            src="../../../logo-fe.jpg"
-            alt="Logo"
-            className="h-16 w-16 mr-4"
-          />
-          <h1 className="text-3xl font-semibold text-green-400">Auctia</h1>
+          <img src={logo1} alt="Logo" className="h-full w-16 mr-4" />
+          <img src={logo2} alt="Logo" className="h-full w-36 mr-4" />
         </div>
 
-        {/* Menú de Navegación */}
+        {/* Botón para el menú en pantallas pequeñas */}
+        <div className="md:hidden">
+          <button
+            type="button"
+            onClick={toggleMenu}
+            className="text-white hover:text-green-400 focus:outline-none"
+          >
+            <RiMenuLine className="w-8 h-8" />
+          </button>
+        </div>
+
+        {/* Menú de Navegación para pantallas medianas y grandes */}
         <nav className="hidden md:flex space-x-6">
           {HeaderMenu.map((item) => (
             <Link
@@ -36,11 +51,35 @@ const Header = () => {
           ))}
         </nav>
 
-        {/* Icono de Usuario */}
-        <div className="flex items-center">
+        {/* Iconos de carrito de compras y usuario */}
+        <div className="hidden md:flex items-center space-x-4">
+          <RiShoppingCart2Line className="w-8 h-8 text-white hover:text-green-400 cursor-pointer" />
           <RiUser3Line className="w-8 h-8 text-white hover:text-green-400 cursor-pointer" />
         </div>
       </div>
+
+      {/* Menú colapsable para pantallas pequeñas */}
+      {isMenuOpen && (
+        <nav className="md:hidden bg-gray-800 p-4">
+          <ul className="space-y-4">
+            {HeaderMenu.map((item) => (
+              <li key={item.id}>
+                <Link
+                  to={item.path}
+                  className="block text-lg text-gray-200 hover:text-green-400"
+                  onClick={toggleMenu}
+                >
+                  {item.title}
+                </Link>
+              </li>
+            ))}
+            <div className="flex items-center space-x-4 mt-4">
+              <RiShoppingCart2Line className="w-8 h-8 text-white hover:text-green-400 cursor-pointer" />
+              <RiUser3Line className="w-8 h-8 text-white hover:text-green-400 cursor-pointer" />
+            </div>
+          </ul>
+        </nav>
+      )}
     </header>
   );
 };

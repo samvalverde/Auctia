@@ -1,6 +1,6 @@
 import { Routes, Route } from 'react-router-dom'
 import PATHS from './paths'
-import Load from '../pages/Load'
+import Load from '../pages/LoadInventory'
 import SearchProduct from '../pages/SearchProduct'
 import HomePage from '../pages/HomePage'
 
