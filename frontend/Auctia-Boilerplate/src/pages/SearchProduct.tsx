@@ -5,6 +5,7 @@ import dummy2 from '../assets/icons/dummy2.jpg';
 import dummy3 from '../assets/icons/dummy3.jpg';
 import dummy4 from '../assets/icons/dummy4.jpg';
 import dummy5 from '../assets/icons/dummy5.jpg';
+import SearchSideBar from '../components/layouts/SearchSideBar';
 
 const data = [
   {
@@ -49,17 +50,8 @@ export default function SearchProduct() {
     <div className="min-h-fit bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-7 gap-8">
         {/* Left Sidebar (Categorías) */}
-        <aside className="col-span-2 bg-white shadow-md rounded-lg p-6 hidden md:block">
-          <h3 className="text-xl font-bold text-gray-800 mb-4">Categorías de Productos</h3>
-          <ul className="space-y-4">
-            <li className="text-gray-700 cursor-pointer hover:text-green-500">Motores</li>
-            <li className="text-gray-700 cursor-pointer hover:text-green-500">Filtros</li>
-            <li className="text-gray-700 cursor-pointer hover:text-green-500">Baterías</li>
-            <li className="text-gray-700 cursor-pointer hover:text-green-500">Llantas</li>
-            <li className="text-gray-700 cursor-pointer hover:text-green-500">Herramientas</li>
-          </ul>
-        </aside>
-
+        <SearchSideBar />
+        
         {/* Right Section (Search bar + Grid) */}
         <section className="col-span-7 md:col-span-5">
           {/* Barra de Búsqueda */}

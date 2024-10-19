@@ -1,22 +1,18 @@
+// Ambassador
+// Se crea un intermediario entre la aplicación y un servicio externo, que en este caso sería simulado.
+
 class FileUploadService {
-    // Singleton para asegurar que solo hay una instancia
-    private static instance: FileUploadService;
-  
-    private constructor() {}
-  
-    static getInstance() {
-      if (!FileUploadService.instance) {
-        FileUploadService.instance = new FileUploadService();
-      }
-      return FileUploadService.instance;
-    }
-  
-    uploadFile(file: File) {
-      console.log("Subiendo archivo:", file.name);
-      // Aquí simulas la lógica de envío del archivo a un backend o servicio externo.
-      // Implementar lógica real o simulada para interactuar con el servicio de procesamiento
-    }
+  async sendToExternalService(files: File[]): Promise<string[]> {
+    return new Promise((resolve) => {
+      console.log("Enviando archivos al servicio externo...");
+
+      // Simulamos un tiempo de respuesta de un servicio externo
+      setTimeout(() => {
+        const response = files.map((file) => `Procesado ${file.name}`);
+        resolve(response);
+      }, 3000);
+    });
   }
-  
-  export default FileUploadService;
-  
+}
+
+export default FileUploadService;
