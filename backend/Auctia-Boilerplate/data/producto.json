@@ -1,0 +1,28 @@
+{
+    "nombre": "Filtro de Aire",
+    "distribuidor": "guacamaya",
+    "distribuidor-usuarioId": "objectId",
+    "descripcion": "Filtro de aire para motor de alta calidad",
+    "categoria": "Filtros",
+    "precio": 25.99,
+    "lastUpdate": "2024-01-15T12:00:00Z",
+    "fabricante": "Bosch",
+    "vehiculo_compatibilidad": [
+      {
+        "marca": "Toyota",
+        "modelo": "Corolla",
+        "año": 2020
+      },
+      {
+        "marca": "Honda",
+        "modelo": "Civic",
+        "año": 2018
+      }
+    ],
+    "stock": 100,
+    "fecha_creacion": "2024-01-01T10:00:00Z",
+    "fotos": [
+      "foto1-url",
+      "foto2-url"
+    ]
+  }

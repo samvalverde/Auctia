@@ -1,0 +1,9 @@
+{
+    "plan_membresia": "anual",
+    "descripcion": "descripcion grande",
+    "fecha_inicio": "2024-01-15T12:00:00Z",
+    "fecha_fin": "2024-01-15T12:00:00Z",
+    "estado": "activo",
+    "precio": 100000,
+    "tipo": "comprador"
+}

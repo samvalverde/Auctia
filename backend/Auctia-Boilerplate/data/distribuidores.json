@@ -1,0 +1,34 @@
+{
+    "nombre": "Guacamaya",
+    "email": "guacamaya@example.com",
+    "telefono": [
+        {
+            "contacto": "marketing-ventas",
+            "telefono": 88888888
+        },
+        {
+            "contacto": "rh",
+            "telefono": 88888887
+        } 
+    ],
+    "direccion": {
+      "calle": "123 Avenida Principal",
+      "ciudad": "San José",
+      "pais": "Costa Rica",
+      "geolocalizacion": {
+            "type": "Point",
+            "coordinates": [-73.856077, 40.848447]
+        }
+    },
+    "membresias": [
+      {
+        "membresia": "anual",
+        "fecha-inicio": "2023-01-15T12:00:00Z",
+        "fecha-fin": "2024-01-15T12:00:00Z",
+        "estado": "inactiva",
+        "monto": 100000
+      }
+    ],
+    "membresia_activa": "objectId",
+    "categoria": "Oro"
+}

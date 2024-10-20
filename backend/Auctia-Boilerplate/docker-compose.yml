@@ -1,0 +1,11 @@
+
+services:
+  web:
+    build: .
+    ports:
+      - "5000:5000"
+    environment:
+      # Configurar la URI de conexión de MongoDB Atlas
+      MONGO_URI: "mongodb+srv://erikaupor:Y6GS6MTqmYkDpt0U@auctia.b1zws.mongodb.net/Auctia?retryWrites=true&w=majority"
+    volumes:
+      - .:/app

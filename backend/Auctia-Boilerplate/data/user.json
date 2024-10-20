@@ -1,0 +1,25 @@
+{
+    "nombre": "Juan Pérez",
+    "email": "juan.perez@example.com",
+    "direccion": {
+      "calle": "123 Avenida Principal",
+      "ciudad": "San José",
+      "pais": "Costa Rica",
+      "geolocalizacion": {
+            "type": "Point",
+            "coordinates": [-73.856077, 40.848447]
+        }
+    },
+    "membresias": [
+      {
+        "membresia": "anual",
+        "fecha-inicio": "2023-01-15T12:00:00Z",
+        "fecha-fin": "2024-01-15T12:00:00Z",
+        "estado": "inactiva",
+        "monto": 100000
+      }
+    ],
+    "membresia_activa": "objectId",
+    "categoria_usuario": "Oro",
+    "tipo_usuario": "Distribuidor"
+}
