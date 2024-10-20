@@ -132,9 +132,8 @@ La pantalla principal de la aplicación donde los distribuidores pueden acceder 
 #### Acciones y Mensajes:
 1. Al hacer clic en "Cargar Inventario", el usuario es redirigido a la pantalla para cargar archivos de inventario.
 2. Al hacer clic en "Buscar Productos", el usuario es redirigido a la pantalla para buscar productos en la base de datos.
-   
-_Screenshot de la pantalla:_
-![HomePage](./frontend/Front-end-Boilerplate/src/assets/screenshots/HomePage.png)
+
+![HomePage](./Front-end-Boilerplate/src/assets/screenshots/HomePage.png)
 
 ---
 
@@ -151,9 +150,8 @@ Pantalla donde los distribuidores pueden cargar archivos de inventario.
 #### Acciones y Mensajes:
 1. **Subir archivo(s)**: Cuando el archivo es cargado correctamente, muestra un mensaje de éxito.
 2. **Error**: Si hay un problema en la carga, aparece un mensaje de error: "Error al cargar archivo(s)".
-   
-_Screenshot de la pantalla:_
-![LoadInventory](./frontend/Front-end-Boilerplate/src/assets/screenshots/LoadInventory.png)
+
+![LoadInventory](./Front-end-Boilerplate/src/assets/screenshots/LoadInventory.png)
 
 ---
 
@@ -169,9 +167,8 @@ Pantalla donde los distribuidores pueden buscar productos y agregarlos al carrit
 #### Acciones y Mensajes:
 1. **Búsqueda**: Introduce el término de búsqueda y muestra productos que coinciden.
 2. **Agregar al carrito/wishlist**: Se despliega un mensaje de éxito al agregar productos al carrito o wishlist.
-   
-_Screenshot de la pantalla:_
-![SearchProduct](./frontend/Front-end-Boilerplate/src/assets/screenshots/SearchProduct.png)
+
+![SearchProduct](./Front-end-Boilerplate/src/assets/screenshots/SearchProduct.png)
 
 ## Matriz de requerimientos funcionales vs. componentes visuales
 
