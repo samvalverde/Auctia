@@ -123,15 +123,25 @@ Contiene funciones y helpers reutilizables.
 
 ## Comandos
 
-### Instalar dependencias
+### Instalar y configurar Tailwind CSS
 
-npm install
+npm install -D tailwindcss postcss autoprefixer  
+npx tailwindcss init -p  
+
+### Instalación y configuración de Vite
+
+npm install vite  
+npm init  
+
+### Instalar dependencias del proyecto
+
+npm install  
 
 ### Ejecutar el servidor de desarrollo
 
-npm run dev
+npm run dev  
 
 ### Detener el servidor de desarrollo
 
-1. ctrl+C
-2. y
+1. Ctrl+C  
+2. Luego presionar 'y'
