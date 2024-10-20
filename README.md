@@ -11,6 +11,7 @@ El problema que se busca resolver, inicialmente para el nicho de la venta de rep
 - [Diagrama Arquitectura](#diagrama-arquitectura)
 - [Storyboard](#storyboard)
 - [Requerimientos No Funcionales](#requerimientos-no-funcionales)
+- [Front-end](#front-end)
 
 ## Problem Statement
 Cargar los inventarios de los distribuidores sin intervención humana.
@@ -152,3 +153,9 @@ Soporte para distintas zonas horarias y formatos de moneda, manejados dinámicam
 Documentación detallada para usuarios finales, administradores y desarrolladores.
 #### Mantenimiento de la documentación:
 Usar Swagger para documentar las APIs y Confluence para mantener y actualizar la documentación técnica.
+
+## Front-end
+
+El frontend del proyecto está disponible en el siguiente subfolder: [Front-end](./frontend).
+
+Para más detalles, consulta la documentación interna del frontend. [README.md](./frontend/README.md).
