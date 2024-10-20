@@ -1,7 +1,7 @@
 # Auctia - Frontend Boilerplate
 
 ## Índice
-- [Descripción General](#descripcion-general)
+- [Descripción General](#descripción-general)
 - [Estructura del proyecto](#estructura-del-proyecto)
 - [Matriz de requerimientos funcionales vs. componentes visuales](#Matriz-de-requerimientos-funcionales-vs.-componentes-visuales)
 - [Comandos](#Comandos)
