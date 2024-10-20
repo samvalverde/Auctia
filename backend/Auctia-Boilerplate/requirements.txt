@@ -1,3 +1,14 @@
 Flask==2.0.1
 pymongo[srv]==3.12.0  # Instalar pymongo con soporte SRV
 Werkzeug==2.0.3  # Versión compatible de Werkzeug
+Flask-PyMongo==2.3.0
+python-dotenv==0.19.0
+pytest==6.2.4
+requests==2.26.0  # Para realizar solicitudes HTTP
+boto3==1.26.0  # Para integraciones con AWS, como SNS y API Gateway
+stripe==2.56.0  # Para Stripe API
+
+# Dependencias adicionales para Auth0 y Cognito
+auth0-python==3.16.1  # Cliente oficial para trabajar con Auth0
+flask-jwt-extended==4.3.1  # JWT para gestionar tokens de acceso en Flask
+pycognito==2024.5.1  # Librería para trabajar con Amazon Cognito

@@ -1,11 +1,28 @@
-
 services:
   web:
     build: .
     ports:
       - "5000:5000"
     environment:
-      # Configurar la URI de conexión de MongoDB Atlas
+      FLASK_APP: app.py
       MONGO_URI: "mongodb+srv://erikaupor:Y6GS6MTqmYkDpt0U@auctia.b1zws.mongodb.net/Auctia?retryWrites=true&w=majority"
+      STRIPE_SECRET_KEY: sk_test_your_stripe_key
+      YOTPO_API_KEY: your_yotpo_api_key
+      YOTPO_SECRET_KEY: your_yotpo_secret_key
+      AWS_ACCESS_KEY_ID: your_aws_access_key
+      AWS_SECRET_ACCESS_KEY: your_aws_secret_key
+      API_GATEWAY_URL: https://your-api-gateway-endpoint.amazonaws.com
     volumes:
       - .:/app
+    depends_on:
+      - mongo
+
+  mongo:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodata:/data/db
+
+volumes:
+  mongodata:
