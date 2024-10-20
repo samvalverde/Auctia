@@ -23,8 +23,18 @@ const Header = () => {
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
         {/* Logo y Título */}
         <div className="flex items-center">
-          <img src={logo1} alt="Logo" className="h-full w-16 mr-4" />
-          <img src={logo2} alt="Logo" className="h-full w-36 mr-4" />
+          <img
+            src={logo1}
+            alt="Logo"
+            onClick={() => window.location.href = PATHS.home}
+            className="h-full w-16 mr-4"
+          />
+          <img
+            src={logo2}
+            alt="Logo"
+            onClick={() => window.location.href = PATHS.home}
+            className="h-full w-36 mr-4"
+          />
         </div>
 
         {/* Botón para el menú en pantallas pequeñas */}

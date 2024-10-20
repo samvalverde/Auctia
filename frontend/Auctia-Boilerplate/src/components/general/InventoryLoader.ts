@@ -1,20 +1,19 @@
-import InventoryFile from './InventoryFile';
-import FileUploadService from './FileUploadService';
+import FileUploadService from '../../services/FileUploadService'; // Servicio que ahora se inyectará.
 
 class InventoryLoader {
-  private service: FileUploadService;
+  private fileUploadService: FileUploadService;
 
-  constructor() {
-    this.service = FileUploadService.getInstance(); // Singleton service
+  constructor(fileUploadService: FileUploadService) {
+    this.fileUploadService = fileUploadService;
   }
 
-  iniciarCarga(file: InventoryFile) {
-    file.setStatus('uploading');
-    this.service.uploadFile(file).then(() => {
-      file.setStatus('completed');
-    }).catch(() => {
-      file.setStatus('failed');
-    });
+  async uploadInventoryFiles(files: File[]): Promise<void> {
+    try {
+      const results = await this.fileUploadService.sendToExternalService(files);
+      console.log('Archivos cargados exitosamente:', results);
+    } catch (error) {
+      console.error('Error al cargar los archivos:', error);
+    }
   }
 }
 

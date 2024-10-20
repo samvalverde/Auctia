@@ -1,50 +1,58 @@
-# React + TypeScript + Vite
+# Documentación de Pantallas - Auctia
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Pantalla: HomePage
 
-Currently, two official plugins are available:
+### Descripción:
+La pantalla principal de la aplicación donde los distribuidores pueden acceder a las funciones principales: Cargar Inventario y Buscar Productos.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Componentes:
+- **Botones**: "Ir a Cargar Inventario" y "Ir a Buscar Productos".
+- **Mensajes**: Muestra la bienvenida al sistema y explica la funcionalidad principal.
 
-## Expanding the ESLint configuration
+### Acciones y Mensajes:
+1. Al hacer clic en "Cargar Inventario", el usuario es redirigido a la pantalla para cargar archivos de inventario.
+2. Al hacer clic en "Buscar Productos", el usuario es redirigido a la pantalla para buscar productos en la base de datos.
+   
+_Screenshot de la pantalla:_
+![HomePage](./src/assets/screenshots/HomePage.png)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+---
 
-- Configure the top-level `parserOptions` property like this:
+## Pantalla: LoadInventory
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+### Descripción:
+Pantalla donde los distribuidores pueden cargar archivos de inventario.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### Componentes:
+- **Área de Dropzone**: Permite arrastrar y soltar los archivos de inventario para cargarlos.
+- **Lista de archivos**: Muestra los archivos seleccionados para cargar.
+- **Botón "Subir Archivos"**: Inicia el proceso de carga de archivos al servidor.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+### Acciones y Mensajes:
+1. **Subir archivo(s)**: Cuando el archivo es cargado correctamente, muestra un mensaje de éxito.
+2. **Error**: Si hay un problema en la carga, aparece un mensaje de error: "Error al cargar archivo(s)".
+   
+_Screenshot de la pantalla:_
+![LoadInventory](./src/assets/screenshots/LoadInventory.png)
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+---
+
+## Pantalla: SearchProduct
+
+### Descripción:
+Pantalla donde los distribuidores pueden buscar productos y agregarlos al carrito o a la wishlist.
+
+### Componentes:
+- **Barra de búsqueda**: Permite filtrar productos en función del nombre o categoría.
+- **Listado de productos**: Muestra los productos encontrados según la búsqueda realizada.
+
+### Acciones y Mensajes:
+1. **Búsqueda**: Introduce el término de búsqueda y muestra productos que coinciden.
+2. **Agregar al carrito/wishlist**: Se despliega un mensaje de éxito al agregar productos al carrito o wishlist.
+   
+_Screenshot de la pantalla:_
+![SearchProduct](./src/assets/screenshots/SearchProduct.png)
+
+---
+
+
