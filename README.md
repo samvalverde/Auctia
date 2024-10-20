@@ -12,6 +12,8 @@ El problema que se busca resolver, inicialmente para el nicho de la venta de rep
 - [Storyboard](#storyboard)
 - [Requerimientos No Funcionales](#requerimientos-no-funcionales)
 - [Front-end](#front-end)
+- [Datos](#Datos)
+- [Back-end](#back-end)
 
 ## Problem Statement
 Cargar los inventarios de los distribuidores sin intervención humana.
@@ -159,3 +161,33 @@ Usar Swagger para documentar las APIs y Confluence para mantener y actualizar la
 El frontend del proyecto está disponible en el siguiente subfolder: [Front-end](./frontend).
 
 Para más detalles, consulta la documentación interna del frontend. [README.md](./frontend/README.md).
+
+## Datos
+
+![bitacoraSearches.](images/bitacoraSearches.png)
+[bitacoraSearches](./backend/Auctia-Boilerplate/data/bitacoraSearches.json).
+
+![distribuidores.](images/distribuidores.png)
+[distribuidores](./backend/Auctia-Boilerplate/data/distribuidores.json).
+
+![inventario.](images/inventario.png)
+[inventario](./backend/Auctia-Boilerplate/data/inventario.json).
+
+![membresias.](images/membresias.png)
+[membresias](./backend/Auctia-Boilerplate/data/membresias.json).
+
+![producto.](images/producto.png)
+[producto](./backend/Auctia-Boilerplate/data/producto.json).
+
+![reseñas.](images/reseñas.png)
+[reseñas](./backend/Auctia-Boilerplate/data/reseñas.json).
+
+![user.](images/user.png)
+[user](./backend/Auctia-Boilerplate/data/user.json).
+
+
+## Back-end
+
+El backend del proyecto está disponible en el siguiente subfolder: [Back-end](./backend).
+
+Para más detalles, consulta la documentación interna del backend. [README.md](./backend/README.md).
