@@ -1,10 +1,10 @@
-# Auctia - Frontend Boilerplate
+# Frontend
 
 ## Índice
 - [Descripción General](#descripción-general)
 - [Estructura del proyecto](#estructura-del-proyecto)
-- [Matriz de requerimientos funcionales vs. componentes visuales](#Matriz-de-requerimientos-funcionales-vs.-componentes-visuales)
-- [Comandos](#Comandos)
+- [Matriz de requerimientos funcionales vs. componentes visuales](#matriz-de-requerimientos-funcionales-vs-componentes-visuales)
+- [Comandos](#comandos)
 
 ## Descripción General
 
@@ -15,16 +15,74 @@ Este proyecto contiene el frontend para ciertas pantallas de Auctia, en donde lo
 ```plaintext
 /src
   ├── /assets
+  │   ├── /icons        # Imágenes y logos de la aplicación
+  │   │   ├── dummy1.jpg
+  │   │   ├── dummy2.jpg
+  │   │   ├── dummy3.jpg
+  │   │   ├── dummy4.jpg
+  │   │   ├── dummy5.jpg
+  │   │   ├── logo.jpg
+  │   │   ├── logo1.jpg
+  │   │   └── logo2.jpg
+  │   └── /screenshots  # Capturas de pantalla para la documentación
+  │       └── MatrixReqsComponents.png
+  │       └── HomePage.png
+  │       └── LoadInventory.png
+  │       └── SearchProduct.png
+  │
   ├── /components
+  │   ├── /general
+  │   │   ├── InventoryFile.ts
+  │   │   ├── InventoryLoader.ts
+  │   │   └── LoadInventoryManager.ts
+  │   ├── /layouts
+  │   │   ├── FileUpload.tsx
+  │   │   ├── Header.tsx
+  │   │   ├── InventoryTable.tsx
+  │   │   ├── SearchSideBar.tsx
+  │   │   └── UploadButton.tsx
+  │
   ├── /contexts
+  │   ├── InventoryContext.ts
+  │   └── UserContext.ts
+  │
   ├── /hooks
+  │   ├── useFileUpload.ts
+  │   ├── useInventory.ts
+  │   └── useProductSearch.ts
+  │
   ├── /pages
+  │   ├── HomePage.tsx
+  │   ├── LoadInventory.tsx
+  │   └── SearchProduct.tsx
+  │
   ├── /router
+  │   ├── Router.tsx
+  │   └── ConfigService.ts
+  │   └── paths.ts
+  │
   ├── /services
+  │   ├── APIService.ts
+  │   ├── APIGatewayService.ts
+  │   ├── DistributorService.ts
+  │   ├── FileUploadService.ts
+  │   ├── InventoryService.ts
+  │   ├── PaymentAdapter.ts
+  │   ├── PaymentService.ts
+  │   ├── PayPalAdapter.ts
+  │   ├── ProductSearchService.ts
+  │   ├── StripeAdapter.ts
+  │   └── StripeService.ts
+  │
   ├── /types
-  └── App.tsx
-  └── main.tsx
-  └── .env
+  │   ├── File.ts
+  │   ├── InventoryTypes.ts
+  │   ├── Product.ts
+  │   └── UserTypes.ts
+  │
+  ├── App.tsx
+  ├── main.tsx
+
 
 ```
 ### /assets: 
@@ -61,7 +119,6 @@ Contiene funciones y helpers reutilizables.
 
 ## Matriz de requerimientos funcionales vs. componentes visuales
 
-_Screenshot de la matriz:_
 ![MatrixReqsComponents](./Front-end-Boilerplate/src/assets/screenshots/MatrixReqsComponents.png)
 
 ## Comandos
