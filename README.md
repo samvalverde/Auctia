@@ -12,15 +12,15 @@ El problema que se busca resolver, inicialmente para el nicho de la venta de rep
 - [Storyboard](#storyboard)
 - [Requerimientos No Funcionales](#requerimientos-no-funcionales)
 - [Front-end](#front-end)
-- [Datos](#Datos)
 - [Back-end](#back-end)
+- [Datos](#datos)
 
 ## Problem Statement
 Cargar los inventarios de los distribuidores sin intervención humana.
 
 ![Problem Statement del proyecto.](images/problem-statement.jpg)
 
-## Requerimientos
+## Requerimientos Funcionales
 1- Carga de Inventario.
 1- Búsqueda de Productos.
 1- Revisión de ofertas de Taller.
@@ -162,6 +162,12 @@ El frontend del proyecto está disponible en el siguiente subfolder: [Front-end]
 
 Para más detalles, consulta la documentación interna del frontend. [README.md](./frontend/README.md).
 
+## Back-end
+
+El backend del proyecto está disponible en el siguiente subfolder: [Back-end](./backend).
+
+Para más detalles, consulta la documentación interna del backend. [README.md](./backend/README.md).
+
 ## Datos
 
 ![bitacoraSearches.](images/bitacoraSearches.png)
@@ -184,10 +190,3 @@ Para más detalles, consulta la documentación interna del frontend. [README.md]
 
 ![user.](images/user.png)
 [user](./backend/Auctia-Boilerplate/data/user.json).
-
-
-## Back-end
-
-El backend del proyecto está disponible en el siguiente subfolder: [Back-end](./backend).
-
-Para más detalles, consulta la documentación interna del backend. [README.md](./backend/README.md).
