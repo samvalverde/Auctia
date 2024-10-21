@@ -1,7 +1,7 @@
 import InventoryService from "../../services/InventoryService";
 import FileUploadService from "../../services/FileUploadService";
 
-class LoadInventoryManager {
+export class LoadInventoryManager {
 
     private inventoryService: InventoryService;
     private fileUploadService: FileUploadService;
@@ -14,7 +14,7 @@ class LoadInventoryManager {
     async processFiles(files: File[]): Promise<void> {
       try {
         console.log("Cargando archivos al servicio de inventario...");
-        const uploadedFiles = await this.inventoryService.uploadFiles(files);
+        await this.inventoryService.uploadFiles(files);
         
         console.log("Archivos cargados. Ahora procesando con el servicio externo...");
         const externalResponse = await this.fileUploadService.sendToExternalService(files);

@@ -10,7 +10,7 @@ class APIService {
       return APIService.instance;
     }
   
-    async fetch(endpoint: string, method: string = 'GET', body?: any): Promise<any> {
+    async fetch(endpoint: string, method: string = 'GET'): Promise<any> {
       console.log(`Simulando solicitud a la API: ${method} ${endpoint}`);
       return new Promise((resolve) => {
         setTimeout(() => {

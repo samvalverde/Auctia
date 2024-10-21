@@ -12,10 +12,20 @@ const HeaderMenu = [
 ];
 
 const Header = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false); // Para controlar el estado del menú colapsable
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isCartDropdownOpen, setCartDropdownOpen] = useState(false);
+  const [isUserDropdownOpen, setUserDropdownOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+  };
+
+  const toggleCartDropdown = () => {
+    setCartDropdownOpen(!isCartDropdownOpen);
+  };
+
+  const toggleUserDropdown = () => {
+    setUserDropdownOpen(!isUserDropdownOpen);
   };
 
   return (
@@ -23,18 +33,20 @@ const Header = () => {
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
         {/* Logo y Título */}
         <div className="flex items-center">
-          <img
-            src={logo1}
-            alt="Logo"
-            onClick={() => window.location.href = PATHS.home}
-            className="h-full w-16 mr-4"
-          />
-          <img
-            src={logo2}
-            alt="Logo"
-            onClick={() => window.location.href = PATHS.home}
-            className="h-full w-36 mr-4"
-          />
+          <Link to={PATHS.home}>
+            <img
+              src={logo1}
+              alt="Logo"
+              className="h-full w-16 mr-4"
+            />
+          </Link>
+          <Link to={PATHS.home}>
+            <img
+              src={logo2}
+              alt="Logo"
+              className="h-full w-36 mr-4"
+            />
+          </Link>
         </div>
 
         {/* Botón para el menú en pantallas pequeñas */}
@@ -62,9 +74,38 @@ const Header = () => {
         </nav>
 
         {/* Iconos de carrito de compras y usuario */}
-        <div className="hidden md:flex items-center space-x-4">
-          <RiShoppingCart2Line className="w-8 h-8 text-white hover:text-green-400 cursor-pointer" />
-          <RiUser3Line className="w-8 h-8 text-white hover:text-green-400 cursor-pointer" />
+        <div className="hidden md:flex items-center space-x-4 relative">
+          {/* Shopping Cart Dropdown */}
+          <div className="relative">
+            <RiShoppingCart2Line
+              className="w-8 h-8 text-white hover:text-green-400 cursor-pointer"
+              onClick={toggleCartDropdown}
+            />
+            {isCartDropdownOpen && (
+              <div className="absolute right-0 mt-2 w-48 bg-white text-black rounded-lg shadow-lg">
+                <ul>
+                  <li className="px-4 py-2 hover:bg-gray-200 cursor-pointer">Ver Carrito</li>
+                  <li className="px-4 py-2 hover:bg-gray-200 cursor-pointer">Checkout</li>
+                </ul>
+              </div>
+            )}
+          </div>
+
+          {/* User Dropdown */}
+          <div className="relative">
+            <RiUser3Line
+              className="w-8 h-8 text-white hover:text-green-400 cursor-pointer"
+              onClick={toggleUserDropdown}
+            />
+            {isUserDropdownOpen && (
+              <div className="absolute right-0 mt-2 w-48 bg-white text-black rounded-lg shadow-lg">
+                <ul>
+                  <li className="px-4 py-2 hover:bg-gray-200 cursor-pointer">Mi Perfil</li>
+                  <li className="px-4 py-2 hover:bg-gray-200 cursor-pointer">Cerrar Sesión</li>
+                </ul>
+              </div>
+            )}
+          </div>
         </div>
       </div>
 
