@@ -79,7 +79,7 @@ backend/
 ## Diagrama de Bloques
 
 ![Diagrama de Bloques.](../images/Diagrama-Bloques.png)
-Aquí podrá revisar el código del diseño de bloques (boilerplate): [Boilerplate](./backend/Auctia-Boilerplate/app). (En el bloque de Models se muestran solo los nombres de las clases, que luego se desglosarán en el diagrama de clases).
+Aquí podrá revisar el código del diseño de bloques (boilerplate): [Boilerplate](./Auctia-Boilerplate/app). (En el bloque de Models se muestran solo los nombres de las clases, que luego se desglosarán en el diagrama de clases).
 
 
 
@@ -92,7 +92,7 @@ inventory_controller será el endpoint para la carga de archivos de inventario. 
 
 En el diagrama también se observa un security layer, en el cual está "auth", que se usará para hacer la conexión con Auth0 y Cognito y permitir authentication y authorization en el sistema.
 
-También se observa el bloque de "initializer" donde está "db_initializer" que se encarga de conectarse a MongoDB Atlas, crear la base de datos Auctia y crear e inicializar las colecciones de la misma a partir de los modelos en archivos JSON que se encuentran en la carpeta [Datos](./backend/Auctia-Boilerplate/data).
+También se observa el bloque de "initializer" donde está "db_initializer" que se encarga de conectarse a MongoDB Atlas, crear la base de datos Auctia y crear e inicializar las colecciones de la misma a partir de los modelos en archivos JSON que se encuentran en la carpeta [Datos](./Auctia-Boilerplate/data).
 
 Por último podrá observar un bloque de Models, donde se muestran los nombres de todas las clases de modelos de datos que se necesitarán en el sistema y que están desglosados en el [Diagrama de Clases](#diagrama-de-clases). 
 
@@ -100,7 +100,7 @@ Por último podrá observar un bloque de Models, donde se muestran los nombres d
 ## Diagrama de Clases
 
 ![Diagrama de Clases.](../images/Diagrama-Clases.jpg)
-Aquí podrá revisar el código del diseño de clases en la carpeta Models: [Models](./backend/Auctia-Boilerplate/app/models).
+Aquí podrá revisar el código del diseño de clases en la carpeta Models: [Models](./Auctia-Boilerplate/app/models).
 
 
-En el diagrama se pueden ver 7 clases principales y 4 secundarias. Las principales son "bitacora_search_model", "distributor_model", "inventory_model", "membership_model", "product_model", "review_model" y "user_model". Estas clases están basadas en el diseño de [Datos](./backend/Auctia-Boilerplate/data). Los atributos de estas clases son los que se encuentran en los respectivos archivos JSON en la carpeta [Datos](./backend/Auctia-Boilerplate/data). Las clases están definidas en código el el folder [Models](./backend/Auctia-Boilerplate/app/models), y tienen sus respectivos metodos de agregar, actualizar y eliminar, aunque de momento no son utilizados y dependiendo de las siguientes etapas del sistema estos metodos podrían modificarse. Las otras clases secundarias que son "MembresiaHist", "Direccion", ContactoInfo" y "Vehiculo" están diseñadas únicamente de manera gráfica, para mayor claridad y comprensión, ya que en realidad representan documentod embebidos.
+En el diagrama se pueden ver 7 clases principales y 4 secundarias. Las principales son "bitacora_search_model", "distributor_model", "inventory_model", "membership_model", "product_model", "review_model" y "user_model". Estas clases están basadas en el diseño de [Datos](./Auctia-Boilerplate/data). Los atributos de estas clases son los que se encuentran en los respectivos archivos JSON en la carpeta [Datos](./Auctia-Boilerplate/data). Las clases están definidas en código el el folder [Models](./Auctia-Boilerplate/app/models), y tienen sus respectivos metodos de agregar, actualizar y eliminar, aunque de momento no son utilizados y dependiendo de las siguientes etapas del sistema estos metodos podrían modificarse. Las otras clases secundarias que son "MembresiaHist", "Direccion", ContactoInfo" y "Vehiculo" están diseñadas únicamente de manera gráfica, para mayor claridad y comprensión, ya que en realidad representan documentod embebidos.
