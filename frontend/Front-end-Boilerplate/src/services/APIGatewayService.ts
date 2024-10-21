@@ -25,7 +25,7 @@ class APIGatewayService {
       });
     }
   
-    async submitInventoryUpdate(distributorId: string, files: File[]): Promise<any> {
+    async submitInventoryUpdate(distributorId: string): Promise<any> {
       console.log(`Simulando la actualización de inventario a través de Amazon API Gateway para el distribuidor ${distributorId}...`);
       return new Promise((resolve) => {
         setTimeout(() => {

@@ -27,7 +27,7 @@ class DistributorService {
       });
     }
   
-    async updateDistributorInventory(distributorId: string, newInventory: any): Promise<any> {
+    async updateDistributorInventory(distributorId: string): Promise<any> {
       console.log(`Simulando la actualización del inventario del distribuidor ${distributorId}`);
       return new Promise((resolve) => {
         setTimeout(() => {

@@ -4,6 +4,7 @@
 - [Descripción General](#descripción-general)
 - [Estructura del proyecto](#estructura-del-proyecto)
 - [Pantallas](#pantallas)
+- [Diagrama de Capas-Classes](#diagrama-de-capas-classes)
 - [Matriz de requerimientos funcionales vs. componentes visuales](#matriz-de-requerimientos-funcionales-vs-componentes-visuales)
 - [Comandos](#comandos)
 
@@ -44,8 +45,8 @@ Este proyecto contiene el frontend para ciertas pantallas de Auctia, en donde lo
   │   │   └── UploadButton.tsx
   │
   ├── /contexts
-  │   ├── InventoryContext.ts
-  │   └── UserContext.ts
+  │   ├── InventoryContext.tsx
+  │   └── UserContext.tsx
   │
   ├── /hooks
   │   ├── useFileUpload.ts
@@ -170,31 +171,55 @@ Pantalla donde los distribuidores pueden buscar productos y agregarlos al carrit
 
 ![SearchProduct](./Front-end-Boilerplate/src/assets/screenshots/SearchProduct.png)
 
+## Diagrama de Capas-Classes
+
+![Diagrama de Capas-Classes](./Front-end-Boilerplate/src/assets/screenshots/Class-Layered-Diagram.png)
+
 ## Matriz de requerimientos funcionales vs. componentes visuales
 
 ![MatrixReqsComponents](./Front-end-Boilerplate/src/assets/screenshots/MatrixReqsComponents.png)
 
 ## Comandos
 
-### Instalar y configurar Tailwind CSS
+### Ejecutar el proyecto de forma local
+
+#### Instalar y configurar Tailwind CSS
 
 npm install -D tailwindcss postcss autoprefixer  
 npx tailwindcss init -p  
 
-### Instalación y configuración de Vite
+#### Instalación y configuración de Vite
 
 npm install vite  
 npm init  
 
-### Instalar dependencias del proyecto
+#### Instalar dependencias del proyecto
 
 npm install  
 
-### Ejecutar el servidor de desarrollo
+#### Ejecutar el servidor de desarrollo
 
 npm run dev  
 
-### Detener el servidor de desarrollo
+#### Detener el servidor de desarrollo
 
-1. Ctrl+C  
+1. Ctrl+C
 2. Luego presionar 'y'
+
+### Ejecutar el proyecto usando Docker Compose
+
+Asegúrate de tener Docker y Docker Compose instalados en tu sistema.
+
+#### Construir y ejecutar los contenedores:
+
+docker-compose up --build
+
+Abrir el navegador en http://localhost:3000/home para acceder a la aplicación.
+
+#### Detener el proyecto en Docker
+
+Para detener los contenedores, presiona Ctrl + C en la terminal.
+
+#### Para detener y remover los contenedores, redes y volúmenes creados:
+
+docker-compose down

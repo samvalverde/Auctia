@@ -1,11 +1,3 @@
-const SideBarIcon = ({ icon }: { icon: string }) => {
-  return (
-    <div className="sidebar-icon">
-      {icon}
-    </div>
-  )
-}
-
 const categories = [
   { name: 'Motores'/*, icon: <SideBarIcon icon="🚗" />*/ },
   { name: 'Filtros'/*, icon: <SideBarIcon icon="🔧" />*/ },
