@@ -3,7 +3,7 @@
 ## Índice
 - [Descripción General](#descripción-general)
 - [Estructura del proyecto](#estructura-del-proyecto)
-- [Diagrama de Bloques](#diaframa-de-bloques)
+- [Diagrama de Bloques](#diagrama-de-bloques)
 - [Diagrama de Clases](#diagrama-de-clases)
 
 
@@ -78,7 +78,7 @@ backend/
 
 ## Diagrama de Bloques
 
-![Diagrama de Bloques.](auctia/images/Diagrama-Bloques.png)
+![Diagrama de Bloques.](Auctia/images/Diagrama-Bloques.png)
 Aquí podrá revisar el código del diseño de bloques (boilerplate): [Boilerplate](./backend/Auctia-Boilerplate/app). (En el bloque de Models se muestran solo los nombres de las clases, que luego se desglosarán en el diagrama de clases).
 
 
@@ -99,7 +99,7 @@ Por último podrá observar un bloque de Models, donde se muestran los nombres d
 
 ## Diagrama de Clases
 
-![Diagrama de Clases.](auctia/images/Diagrama-Clases.jpg)
+![Diagrama de Clases.](Auctia/images/Diagrama-Clases.jpg)
 Aquí podrá revisar el código del diseño de clases en la carpeta Models: [Models](./backend/Auctia-Boilerplate/app/models).
 
 
